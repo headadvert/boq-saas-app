@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOQ Pro | Construction Estimation Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="landing-page">
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">BQ</span>
+        <span>
+          <strong>BOQ Pro</strong>
+          <small>Professional Construction Estimation Platform</small>
+        </span>
+      </a>
+      <nav class="main-nav">
+        <a href="#platform">Platform</a>
+        <a href="#standards">Standards</a>
+        <a href="#workflow">Workflow</a>
+      </nav>
+      <button class="outline-button" data-auth-trigger="boq">Open Workspace</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-block">
+      <div class="container hero-grid">
+        <div>
+          <p class="section-label">Global BOQ and Cost Platform</p>
+          <h1>Approved-standard estimation for villas, towers, hospitals, factories, and turnkey developments.</h1>
+          <p class="lead-text">Built for contractors, consultants, and developers to produce structured BOQs, budget estimates, material takeoff summaries, and branded execution-ready reports.</p>
+          <div class="hero-actions">
+            <button class="primary-button" data-auth-trigger="boq">Start BOQ Mode</button>
+            <button class="secondary-button" data-auth-trigger="cost">Start Cost Mode</button>
+          </div>
+          <div class="hero-tags">
+            <span>SBC</span>
+            <span>Dubai Municipality</span>
+            <span>NRM</span>
+            <span>CSI MasterFormat</span>
+            <span>CPWD / IS</span>
+            <span>Australian Standards</span>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <div class="panel-card dark-panel">
+            <p class="section-label inverse">Platform Snapshot</p>
+            <div class="kpi-grid">
+              <article><strong>7</strong><span>Project Types</span></article>
+              <article><strong>14</strong><span>Turnkey Scopes</span></article>
+              <article><strong>6</strong><span>Country Standards</span></article>
+              <article><strong>10</strong><span>Free Projects</span></article>
+            </div>
+            <div class="panel-note">
+              <h3>Professional Flow</h3>
+              <p>Select BOQ or Cost, choose project type, country standard, input project data, and generate a market-aligned estimate.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="platform" class="content-section light-surface">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Platform Coverage</p>
+          <h2>Designed around real construction packages, not generic AI output</h2>
+        </div>
+        <div class="feature-grid three-up">
+          <article class="feature-card">
+            <h3>Project-Type Logic</h3>
+            <p>Residential, apartments, commercial, mixed-use, industrial, hospitality, and healthcare each reshape the scope logic, rates, and quantity assumptions.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Market Standards</h3>
+            <p>BOQs adapt terminology, units, and structure by country using Saudi, UAE, UK, USA, India, and Australia-aligned standards.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Turnkey Estimation</h3>
+            <p>Includes pre-construction, structure, envelope, MEP, industrial systems, solar, fit-out, preliminaries, and commercial pricing layers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="standards" class="content-section">
+      <div class="container two-column-section">
+        <div>
+          <p class="section-label">Standards and Markets</p>
+          <h2>One platform, multiple regional BOQ conventions</h2>
+          <p class="lead-text compact">Country selection automatically applies currency, standard label, and output terminology so the estimate reads like professional engineering software.</p>
+        </div>
+        <div class="standards-list">
+          <div class="standard-item"><strong>Saudi Arabia</strong><span>SBC · SAR</span></div>
+          <div class="standard-item"><strong>UAE</strong><span>Dubai Municipality · AED</span></div>
+          <div class="standard-item"><strong>UK</strong><span>NRM · GBP</span></div>
+          <div class="standard-item"><strong>USA</strong><span>CSI MasterFormat · USD</span></div>
+          <div class="standard-item"><strong>India</strong><span>CPWD / IS Codes · INR</span></div>
+          <div class="standard-item"><strong>Australia</strong><span>Australian Standards · AUD</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="workflow" class="content-section light-surface">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Workflow</p>
+          <h2>Simple on the surface, disciplined underneath</h2>
+        </div>
+        <div class="feature-grid three-up">
+          <article class="workflow-card"><span>01</span><h3>Select Mode</h3><p>Choose BOQ mode for measured quantities or Cost mode for budget and margin analysis.</p></article>
+          <article class="workflow-card"><span>02</span><h3>Define Project</h3><p>Select project type, country standard, floors, rooms, dimensions, finish level, and complexity assumptions.</p></article>
+          <article class="workflow-card"><span>03</span><h3>Generate Report</h3><p>Review turnkey scope breakdown, material takeoff, commercial totals, and export a branded PDF-ready report.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-shell" id="authModal" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" id="closeAuthModal" type="button" aria-label="Close">X</button>
+      <p class="section-label">Create Project Workspace</p>
+      <h2>Continue to BOQ Pro</h2>
+      <form id="signupForm" class="form-grid single-column">
+        <label>Full Name<input id="userName" name="userName" type="text" placeholder="Your full name" required></label>
+        <label>Email<input id="userEmail" name="userEmail" type="email" placeholder="name@company.com" required></label>
+        <label>Company<input id="userCompany" name="userCompany" type="text" placeholder="Company or consultancy name"></label>
+        <label>Phone<input id="userPhone" name="userPhone" type="tel" placeholder="+966 51 175 9092"></label>
+        <button class="primary-button full-width" type="submit">Create Workspace</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
